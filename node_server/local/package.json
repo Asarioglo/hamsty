@@ -1,0 +1,22 @@
+{
+  "name": "hamsty",
+  "version": "1.0.0",
+  "description": "Hamster Monitor",
+  "keywords": [
+    "Node.js",
+    "application"
+  ],
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "socket.io": "latest",
+    "socket.io-client": "latest",
+    "serialport": "latest"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+  "private": true,
+  "main": "server.js"
+}

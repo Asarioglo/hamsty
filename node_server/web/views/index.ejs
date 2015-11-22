@@ -1,0 +1,123 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hamsty - have your own virtual real hamster</title>
+	<!-- For-Mobile-Apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Hamster tracking syste, tamagochi like, live trnaslation"/>
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //For-Mobile-Apps -->
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<!-- Style -->
+	<!-- JavaScript -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/require.js"></script>
+	<!-- Javascript -->
+</head>
+<body onload="require(['js/functions'], function(app) {
+	app.init()
+})" onresize="require(['js/functions'], function(app) {
+	app.resize()
+})">
+
+<nav class="navbar navbar-default">
+	<div class="header-text">Hamsty</div>
+</nav>
+<div class="content">
+	<div class="top">
+		<div class="hk">
+			<iframe class="videoframe" src="https://www.youtube.com/embed/AAPQGiuqR3g" frameborder="no" allowfullscreen></iframe>
+			<!--			<iframe src="https://www.youtube.com/embed/C2yDJv9taF8" frameborder="0" allowfullscreen></iframe> -->
+		</div>
+
+		<div class="ln">
+			<div class="horizontal-vitals">
+				<div class="vital-status-fields" id="room-temperature">
+					<div class="virtual-status-inner">
+						Temperature/Humidity: <span class="room-temperature-span"></span>/<span class="room-humidity-span"></span>
+					</div>
+				</div>
+				<div class="vital-status-fields" id="hamster-status">
+					<div class="virtual-status-inner">
+						Hamsty Status: <span class="hamster-status-span">Sleeping</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="water-bottle-container">
+			<img id="water-bottle-image">
+		</div>
+
+		<div class="clear"></div>
+
+	</div>
+	<div class="row button-container">
+		<button class="btn btn-success manager-buttons" id="button-feed">Feed</button>
+		<button class="btn btn-success manager-buttons" id="button-fan">Fan On/Off</button>
+		<button class="btn btn-success manager-buttons" id="button-light">Lights On/Off</button>
+	</div>
+
+	<div class="row">
+		<div class="header-text">Fitness Tracker</div>
+	</div>
+	<div class="bottom">
+		<div class="ct">
+			<div class="horizontal-vitals-fit">
+				<div class="vital-status-fields-fit" id="speed">
+					<div class="virtual-status-inner">
+						Speed: <span class="speed-span">0</span>
+					</div>
+				</div>
+				<div class="vital-status-fields-fit" id="distance">
+					<div class="virtual-status-inner">
+						Distance: <span class="distance-span">0</span> m
+					</div>
+				</div>
+				<div class="vital-status-fields-fit" id="calories">
+					<div class="virtual-status-inner">
+						Calories: <span class="calories-span">0</span> cal/hour
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sy graph-container">
+
+		</div>
+		<div class="clear"></div>
+
+	</div>
+
+</div>
+
+<div class="footer">
+	<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="fb-share-button"
+		 data-href="http://hamsty.com"
+		 data-layout="button">
+	</div>
+	<a href="https://twitter.com/share" class="twitter-share-button"{count} data-url="http://hamsty.com" data-hashtags="hamsty">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	<!-- Place this tag in your head or just before your close body tag. -->
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+	<!-- Place this tag where you want the share button to render. -->
+	<div class="g-plus" data-action="share" data-href="http://hamsty.com"></div>
+</div>
+</body>
+</html>
